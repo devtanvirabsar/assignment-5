@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Dev-board</title>
+</head>
+<body>
+    <!-- navigation -->
+    <header class="w-11/12 mx-auto bg-white mt-3 rounded-lg p-2">
+        <div class="flex justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-1/5">
+                    <img class="w-full" src="./assets/logo.png" alt="logo">
+                </div>
+                <p>Dev <span class="font-bold">Board</span></p>
+            </div>
+
+            <div>
+                <div class="flex items-center gap-3">
+                    <div class="flex items-center bg-[#F4F7FF] pl-3 pr-3 rounded-lg gap-3 "><div class="w-2/5"><img class="w-full" src="./assets/checkbox.png" alt=""></div>
+                    <p class="font-bold text-2xl">0</p>
+                 </div>
+                    <div class="w-4/12 border-4 border-[#F4F7FF] rounded-full"><img class="w-full" src="./assets/theme-btn.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- navigation end -->
+     <main class="flex w-11/12 mx-auto">
+        <section class="h-20 w-[75%] bg-white">
+            <!-- date bar -->
+            <div class="flex gap-1 items-center mt-auto mb-auto">
+                <div class="w-[27%] bg-[#F4F7FF] flex items-center gap-2 p-[1%] rounded-lg">
+                    <div class="w-[17%] border-8 border-white rounded-full"><img class="w-full" src="./assets/checkbox.png" alt=""></div>
+                    <div>
+                        <p class="text-[#00303C] font-normal">Task Assigned</p>
+                        <p class="font-bold text-xl">00</p>
+                    </div>
+                </div>
+                <div class="w-[45%] flex items-center p-[1%]" id="calander">
+                    <div class="w-[13%]"><img class="w-full" src="./assets/board.png" alt=""></div>
+                    <p class="text-white">Discover Something <br> New Today!</p>
+                </div>
+                <div class="w-[27%] bg-[#F4F7FF] flex items-center gap-2 p-[1%] rounded-lg">
+                    <div class="w-[17%] border-8 border-white rounded-full"><img class="w-full" src="./assets/calender.png" alt=""></div>
+                    <div>
+                        <p class="text-[#00303C] font-normal">Wed,</p>
+                        <p class="font-bold text-xl">Jul 28 2025</p>
+                    </div>
+                </div>
+            </div>
+            <!-- tast bar -->
+             <div class="grid grid-cols-3 gap-3 bg-white">
+                <!-- first card -->
+                <div class="bg-[#F4F7FF] rounded-lg p-4">
+                    <p class="w-1/3 p-2 bg-white rounded-lg mb-3">ShopEase</p>
+                    <p class="font-medium mb-3">Fix Mobile Button Issue </p>
+                    <p class="p-2 bg-white rounded-lg mb-3">Debug using Chrome DevTools, check for overlapping</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-[#000000]">Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button class="btn block bg-[#3752FD] text-white mt-2">Completed</button>
+                    </div>
+                </div>
+                <!-- second card -->
+                <div class="bg-[#F4F7FF] rounded-lg p-4">
+                    <p class="w-1/3 p-2 bg-white rounded-lg mb-3">ShopEase</p>
+                    <p class="font-medium mb-3">Fix Mobile Button Issue </p>
+                    <p class="p-2 bg-white rounded-lg mb-3">Debug using Chrome DevTools, check for overlapping</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-[#000000]">Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button class="btn block bg-[#3752FD] text-white mt-2">Completed</button>
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="bg-[#F4F7FF] rounded-lg p-4">
+                    <p class="w-1/3 p-2 bg-white rounded-lg mb-3">ShopEase</p>
+                    <p class="font-medium mb-3">Fix Mobile Button Issue </p>
+                    <p class="p-2 bg-white rounded-lg mb-3">Debug using Chrome DevTools, check for overlapping</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-[#000000]">Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button class="btn block bg-[#3752FD] text-white mt-2">Completed</button>
+                    </div>
+                </div>
+                <!-- fourth card -->
+                <div class="bg-[#F4F7FF] rounded-lg p-4">
+                    <p class="w-1/3 p-2 bg-white rounded-lg mb-3">ShopEase</p>
+                    <p class="font-medium mb-3">Fix Mobile Button Issue </p>
+                    <p class="p-2 bg-white rounded-lg mb-3">Debug using Chrome DevTools, check for overlapping</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-[#000000]">Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button class="btn block bg-[#3752FD] text-white mt-2">Completed</button>
+                    </div>
+                </div>
+                <!-- fifth card --><div class="bg-[#F4F7FF] rounded-lg p-4">
+                    <p class="w-1/3 p-2 bg-white rounded-lg mb-3">ShopEase</p>
+                    <p class="font-medium mb-3">Fix Mobile Button Issue </p>
+                    <p class="p-2 bg-white rounded-lg mb-3">Debug using Chrome DevTools, check for overlapping</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-[#000000]">Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button class="btn block bg-[#3752FD] text-white mt-2">Completed</button>
+                    </div>
+                </div>
+                <!-- sixth card --><div class="bg-[#F4F7FF] rounded-lg p-4">
+                    <p class="w-1/3 p-2 bg-white rounded-lg mb-3">ShopEase</p>
+                    <p class="font-medium mb-3">Fix Mobile Button Issue </p>
+                    <p class="p-2 bg-white rounded-lg mb-3">Debug using Chrome DevTools, check for overlapping</p>
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-[#000000]">Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button class="btn block bg-[#3752FD] text-white mt-2">Completed</button>
+                    </div>
+                </div>
+
+
+             </div>
+        </section>
+        <section class="w-[25%] bg-white">
+            <div class="pb-4">
+                <div class="flex justify-center items-center gap-2">
+                    <div class="w-[5%]"><img class="w-full" src="./assets/activity.png" alt=""></div>
+                    <p>Activity Log</p>
+                </div>
+                <button class="block mx-auto btn text-white bg-[#3752FD] mt-3" id="clearBtn">Clear History</button>
+            </div>
+            <div class="w-11/12 mx-auto">
+                <p class="bg-[#F4F7FF] p-3 lg:text-[14px] rounded-md mb-3">You have Complete The Task Add <br> Dark Mode at 12:48:15 PM</p>
+                <p class="bg-[#F4F7FF] p-3 lg:text-[14px] rounded-md mb-3">You have Complete The Task Add <br> Dark Mode at 12:48:15 PM</p>
+            </div>
+        </section>
+     </main>
+    <script src="./JS/script.js"></script>
+</body>
+</html>
