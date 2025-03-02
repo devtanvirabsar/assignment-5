@@ -71,10 +71,10 @@ blogPage.addEventListener('click', function(){
 })
 
 function alartFunc(){
-    confirm('Board update successfully ')
+    alert('Board update successfully ')
 }
 function alFunc(){
-    confirm('congrates!!! You have completed all the current task')
+    alert('congrates!!! You have completed all the current task')
 }
 clearBtn.addEventListener('click', function (){
     history.innerHTML = ''
