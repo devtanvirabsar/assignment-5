@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Blogs</title>
+</head>
+<body class="pb-10">
+    <div class="h-5"></div>
+    <div class="w-11/12 mx-auto bg-white rounded-lg p-2 mb-5">
+        <div class="flex justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-1/5">
+                    <img class="w-full" src="./assets/logo.png" alt="logo">
+                </div>
+                <p>Dev <span class="font-bold">Board</span></p>
+            </div>
+
+            <div>
+               <button class="btn text-white bg-[#3752FD]" id="backBtn">Back Desk</button>
+            </div>
+        </div>
+    </div>
+    <p class="text-3xl font-bold text-center mb-7">Blogs</p>
+    <!-- question one  -->
+     <div class="">
+        <div class="bg-white w-11/12 mx-auto p-2 rounded-lg mb-5">
+            <p class="mb-3 mt-2 pl-2">Question-1: What are the different ways to select an element in the DOM?</p>
+            <p class="text-gray-500 pl-2">There are so many way, you can select an element in the dom. 1st way is querySelector, 2nd querySelectorAll, 3rd getElementById, 4th getElementsByClassName, 5th getElementsByTagName, 6th getElementsByName etc.</p>
+         </div>
+         <!-- question two -->
+         <div class="bg-white w-11/12 mx-auto p-2 rounded-lg mb-5">
+            <p class="mb-3 mt-2 pl-2">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+            <p class="text-gray-500 pl-2">There are have few difference among innerHTML, innerText, and textContent, firstly innerHTML return html inside the parent element, secondly textContent return text inside the html and textContent return Gets or sets all text content, including hidden text. </p>
+         </div>
+         <!-- question three -->
+         <div class="bg-white w-11/12 mx-auto p-2 rounded-lg mb-5">
+            <p class="mb-3 mt-2 pl-2">Question-3: What is event delegation in the DOM?</p>
+            <p class="text-gray-500 pl-2">Event Delegation is a technique in JavaScript where a parent element handles events for its child elements, even if they are added dynamically. Instead of adding event listeners to multiple child elements, you add a single event listener to the parent.</p>
+         </div>
+         <!-- question four -->
+         <div class="bg-white w-11/12 mx-auto p-2 rounded-lg mb-5">
+            <p class="mb-3 mt-2 pl-2">Question-4: What is event bubbling in the DOM?</p>
+            <p class="text-gray-500 pl-2">Event Bubbling is a concept in JavaScript where an event starts from the target element and then propagates (bubbles) up to its parent elements. When an event occurs on a child element, it first triggers on that element and then moves upward through its ancestors (parents, grandparents, etc.).</p>
+         </div>
+         <!-- question five -->
+         <div class="bg-white w-11/12 mx-auto p-2 rounded-lg mb-5">
+            <p class="mb-3 mt-2 pl-2">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            <p class="text-gray-500 pl-2">To create elements, use document.createElement("tag"). To add elements, use appendChild(), prepend(), or insertBefore(). To remove elements, use removeChild() or remove(). append() can also add text. These methods allow efficient manipulation of the DOM by dynamically adding or removing content.</p>
+         </div>
+     </div>
+     <script>
+        let backBtn = document.querySelector('#backBtn');
+        backBtn.addEventListener('click',function(){
+            window.location.href = './index.html'
+        })
+     </script>
+</body>
+</html>

@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="./styles/style.css">
     <title>Dev-board</title>
 </head>
-<body>
+<body id="body" class="pb-8">
+    <br>
     <!-- navigation -->
-    <header class="w-11/12 mx-auto bg-white mt-3 rounded-lg p-2">
+     
+    <div class="w-11/12 mx-auto bg-white rounded-lg p-2 mb-5">
         <div class="flex justify-between">
             <div class="flex items-center gap-2">
                 <div class="w-1/5">
@@ -22,42 +24,43 @@
             <div>
                 <div class="flex items-center gap-3">
                     <div class="flex items-center bg-[#F4F7FF] pl-3 pr-3 rounded-lg gap-3 "><div class="w-2/5"><img class="w-full" src="./assets/checkbox.png" alt=""></div>
-                    <p class="font-bold text-2xl">0</p>
+                    <p class="font-bold text-2xl" id="point">7</p>
                  </div>
-                    <div class="w-4/12 border-4 border-[#F4F7FF] rounded-full"><img class="w-full" src="./assets/theme-btn.png" alt=""></div>
+                    <div class="w-4/12 border-4 border-[#F4F7FF] rounded-full" id="background-theme"><img class="w-full" src="./assets/theme-btn.png" alt=""></div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
     <!-- navigation end -->
-     <main class="flex w-11/12 mx-auto ">
-        <section class="h-20 w-[75%] bg-white">
+    
+     <main class="flex w-11/12 mx-auto gap-5">
+        <section class="w-[75%] bg-white rounded-xl p-2">
             <!-- date bar -->
-            <div class="flex gap-1 items-center mt-auto mb-5">
+            <div class="flex gap-3 items-center mt-5 mb-5">
                 <div class="w-[27%] bg-[#F4F7FF] flex items-center gap-2 p-[1%] rounded-lg">
                     <div class="w-[17%] border-8 border-white rounded-full"><img class="w-full" src="./assets/checkbox.png" alt=""></div>
                     <div>
                         <p class="text-[#00303C] font-normal">Task Assigned</p>
-                        <p class="font-bold text-xl">00</p>
+                        <p class="font-bold text-xl" id="daily-task">6</p>
                     </div>
                 </div>
-                <div class="w-[45%] flex items-center p-[1%]" id="calander">
+                <div class="w-[45%] flex items-center p-[1%] cursor-pointer gap-4" id="calander">
                     <div class="w-[13%]"><img class="w-full" src="./assets/board.png" alt=""></div>
                     <p class="text-white">Discover Something <br> New Today!</p>
                 </div>
                 <div class="w-[27%] bg-[#F4F7FF] flex items-center gap-2 p-[1%] rounded-lg">
                     <div class="w-[17%] border-8 border-white rounded-full"><img class="w-full" src="./assets/calender.png" alt=""></div>
                     <div>
-                        <p class="text-[#00303C] font-normal">Wed,</p>
-                        <p class="font-bold text-xl">Jul 28 2025</p>
+                        <p class="text-[#00303C] font-normal" id="day">Wed,</p>
+                        <p class="font-bold text-xl" id="month">Jul 28 2025</p>
                     </div>
                 </div>
             </div>
-            <!-- tast bar -->
-             <div class="grid grid-cols-3 gap-3 bg-white pt-4">
+            <!-- task bar -->
+             <div class="grid grid-cols-3 gap-3 bg-white pt-4 taskBar" id="taskBar">
                 <!-- first card -->
                 <div class="bg-[#F4F7FF] rounded-lg p-4">
-                    <p class="w-2/5 p-[5%] bg-white rounded-lg mb-3 font-medium text-[15px]">ShopEase</p>
+                    <p class="w-fit p-[5%] bg-white rounded-lg mb-3 font-medium text-[15px]">ShopEase</p>
                     <p class="font-medium mb-3">Fix Mobile Button Issue </p>
                     <p class="p-3 bg-white rounded-lg mb-3 text-gray-500">Debug using Chrome DevTools, check for overlapping ...</p>
                     <div class="flex items-center justify-between">
@@ -70,8 +73,8 @@
                 </div>
                 <!-- second card -->
                 <div class="bg-[#F4F7FF] rounded-lg p-4">
-                    <p class="w-2/5 p-[5%] bg-white rounded-lg mb-3 font-medium text-[15px]">ShopEase</p>
-                    <p class="font-medium mb-3">Fix Mobile Button Issue </p>
+                    <p class="w-fit p-[5%] bg-white rounded-lg mb-3 font-medium text-[15px]">CloudSync</p>
+                    <p class="font-medium mb-3">Add Dark Mode</p>
                     <p class="p-3 bg-white rounded-lg mb-3 text-gray-500">Debug using Chrome DevTools, check for overlapping ...</p>
                     <div class="flex items-center justify-between">
                         <div>
@@ -83,8 +86,8 @@
                 </div>
                 <!-- third card -->
                 <div class="bg-[#F4F7FF] rounded-lg p-4">
-                    <p class="w-2/5 p-[5%] bg-white rounded-lg mb-3 font-medium text-[15px]">ShopEase</p>
-                    <p class="font-medium mb-3">Fix Mobile Button Issue </p>
+                    <p class="w-fit p-[5%] bg-white rounded-lg mb-3 font-medium text-[15px]">SwiftPay</p>
+                    <p class="font-medium mb-3">Optimize  Home page </p>
                     <p class="p-3 bg-white rounded-lg mb-3 text-gray-500">Debug using Chrome DevTools, check for overlapping ...</p>
                     <div class="flex items-center justify-between">
                         <div>
@@ -96,8 +99,8 @@
                 </div>
                 <!-- fourth card -->
                 <div class="bg-[#F4F7FF] rounded-lg p-4">
-                    <p class="w-2/5 p-[5%] bg-white rounded-lg mb-3 font-medium text-[15px]">ShopEase</p>
-                    <p class="font-medium mb-3">Fix Mobile Button Issue </p>
+                    <p class="w-fit p-[5%] bg-white rounded-lg mb-3 font-medium text-[15px]">Meta</p>
+                    <p class="font-medium mb-3">Add new emoji 🤲</p>
                     <p class="p-3 bg-white rounded-lg mb-3 text-gray-500">Debug using Chrome DevTools, check for overlapping ...</p>
                     <div class="flex items-center justify-between">
                         <div>
@@ -109,8 +112,8 @@
                 </div>
                 <!-- fifth card -->
                  <div class="bg-[#F4F7FF] rounded-lg p-4">
-                    <p class="w-2/5 p-[5%] bg-white rounded-lg mb-3 font-medium text-[15px]">ShopEase</p>
-                    <p class="font-medium mb-3">Fix Mobile Button Issue </p>
+                    <p class=" w-fit p-[5%] bg-white rounded-lg mb-3 font-medium text-[15px]">Google LLC</p>
+                    <p class="font-medium mb-3">Integrate OpenAI API </p>
                     <p class="p-3 bg-white rounded-lg mb-3 text-gray-500">Debug using Chrome DevTools, check for overlapping ...</p>
                     <div class="flex items-center justify-between">
                         <div>
@@ -122,32 +125,32 @@
                 </div>
                 <!-- sixth card -->
                  <div class="bg-[#F4F7FF] rounded-lg p-4">
-                    <p class="w-2/5 p-[5%] bg-white rounded-lg mb-3 font-medium text-[15px]">ShopEase</p>
-                    <p class="font-medium mb-3">Fix Mobile Button Issue </p>
+                    <p class="w-fit p-[5%] bg-white rounded-lg mb-3 font-medium text-[15px]">Glassdoar</p>
+                    <p class="font-medium mb-3">Improve Job searching </p>
                     <p class="p-3 bg-white rounded-lg mb-3 text-gray-500">Debug using Chrome DevTools, check for overlapping ...</p>
                     <div class="flex items-center justify-between">
                         <div>
                             <p class="text-[#000000]">Deadline</p>
                             <p>21 March 2025</p>
                         </div>
-                        <button class="btn block bg-[#3752FD] text-white mt-2">Completed</button>
+                        <button class="btn block bg-[#3752FD] text-white mt-2" id="lastBtn">Completed</button>
                     </div>
                 </div>
 
 
              </div>
         </section>
-        <section class="w-[25%] bg-white">
+        <!-- history section -->
+        <section class="w-[25%] bg-white rounded-xl">
             <div class="pb-4">
-                <div class="flex justify-center items-center gap-2">
+                <div class="flex justify-center items-center gap-2 mt-2">
                     <div class="w-[5%]"><img class="w-full" src="./assets/activity.png" alt=""></div>
                     <p>Activity Log</p>
                 </div>
                 <button class="block mx-auto btn text-white bg-[#3752FD] mt-3" id="clearBtn">Clear History</button>
             </div>
-            <div class="w-11/12 mx-auto">
-                <p class="bg-[#F4F7FF] p-3 lg:text-[14px] rounded-md mb-3">You have Complete The Task Add <br> Dark Mode at 12:48:15 PM</p>
-                <p class="bg-[#F4F7FF] p-3 lg:text-[14px] rounded-md mb-3">You have Complete The Task Add <br> Dark Mode at 12:48:15 PM</p>
+            <div class="w-11/12 mx-auto" id="logs">
+                
             </div>
         </section>
      </main>
